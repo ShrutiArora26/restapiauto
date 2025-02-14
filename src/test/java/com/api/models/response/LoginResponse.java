@@ -1,4 +1,4 @@
-package com.api.response;
+package com.api.models.response;
 
 import java.util.List;
 

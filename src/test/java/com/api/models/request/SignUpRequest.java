@@ -1,4 +1,4 @@
-package com.api.modelsrequest;
+package com.api.models.request;
 
 
 public class SignUpRequest {
@@ -11,7 +11,7 @@ public class SignUpRequest {
     private String mobileNumber;
 
 
-    public SignUpRequest(String username, String password, String email, String firstName, String lastName, String mobileNumber) {
+    private SignUpRequest(String username, String password, String email, String firstName, String lastName, String mobileNumber) {
         this.username = username;
         this.password = password;
         this.email = email;

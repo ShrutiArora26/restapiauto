@@ -1,4 +1,4 @@
-package com.api;
+package com.api.tests;
 
 import com.api.base.AuthService;
 import io.restassured.response.Response;

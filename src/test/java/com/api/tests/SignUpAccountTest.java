@@ -6,10 +6,10 @@ import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class CreateAccountTest {
+public class SignUpAccountTest {
 
     @Test
-    public void createAccountTest() {
+    public void signupAccountTest() {
         SignUpRequest signUpRequest = new SignUpRequest.Builder()
             .username("alia1234")
             .firstName("Alia")

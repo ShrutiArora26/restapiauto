@@ -1,13 +1,13 @@
 package com.api.models.request;
 
-public class ProfileRequest {
+public class UserProfileRequest {
 
     private String firstName;
     private String lastName;
     private String email;
     private String mobileNumber;
 
-    public ProfileRequest(String firstName, String lastName, String email, String mobileNumber) {
+    public UserProfileRequest(String firstName, String lastName, String email, String mobileNumber) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
@@ -64,7 +64,7 @@ public class ProfileRequest {
         private String mobileNumber;
 
 
-        public Builder firstName(String firstname) {
+        public Builder firstName(String firstName) {
             this.firstName = firstName;
             return this;
         }
@@ -82,6 +82,11 @@ public class ProfileRequest {
         public Builder mobileNumber(String mobileNumber) {
             this.mobileNumber = mobileNumber;
             return this;
+        }
+
+        public UserProfileRequest build() {
+            UserProfileRequest userProfileRequest = new UserProfileRequest(firstName, lastName, email, mobileNumber);
+            return userProfileRequest;
         }
 
 

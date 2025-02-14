@@ -8,7 +8,7 @@ import com.api.models.response.UserProfileResponse;
 import io.restassured.response.Response;
 import org.testng.annotations.Test;
 
-public class GetProfileRequestTest {
+public class GetUserProfileRequestTest {
 
     @Test
     public void getProfileInfoTest(){

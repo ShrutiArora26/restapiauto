@@ -1,12 +1,14 @@
-package com.api;
+package com.api.tests;
 
 import com.api.base.AuthService;
-import com.api.modelsrequest.LoginRequest;
-import com.api.response.LoginResponse;
+import com.api.models.request.LoginRequest;
+import com.api.models.response.LoginResponse;
 import io.restassured.response.Response;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+@Listeners(com.api.listeners.TestListener.class)
 public class LoginTest2 {
 
     @Test

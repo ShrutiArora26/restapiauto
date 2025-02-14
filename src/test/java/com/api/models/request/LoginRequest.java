@@ -1,4 +1,4 @@
-package com.api.modelsrequest;
+package com.api.models.request;
 
 public class LoginRequest {
 
