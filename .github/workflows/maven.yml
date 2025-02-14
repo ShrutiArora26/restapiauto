@@ -9,11 +9,10 @@ on:
    - cron: '00 17 * * *'
   workflow_dispatch:  # Allows manual trigger from GitHub UI
 
-
 jobs:
   test:
     runs-on: ubuntu-latest
-permissions:
+    permissions:
       contents: read
       checks: write
       issues: write
@@ -27,9 +26,9 @@ permissions:
         java-version: '17'
         distribution: 'temurin'
         cache: 'maven'
-        
+
       - name: Run API Tests
-      run: mvn clean test -Dsuite=suite
+        run: mvn clean test -Dsuite=suite
 
     - name: Upload test results
       if: always()
